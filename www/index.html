@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Farmácia</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+</head>
+
+<body>
+
+    <!--
+    <ul class="tabs blue lighten-2">
+        <li class="tab">
+            <a href="#medicine" class="waves-effect waves-light white-text">Medicamentos</a>
+        </li>
+        <li class="tab">
+            <a href="#perfurm" class="waves-effect waves-light white-text">Perfumaria</a>
+        </li>
+        <li class="tab">
+            <a href="#hygiene" class="waves-effect waves-light white-text">Higiene Pessoal</a>
+        </li>
+    </ul>
+    -->
+
+    <nav class="blue lighten-2">
+        <ul class="hide-on-med-and-down">
+            <li><a href="#medicine">Medicamentos</a></li>
+            <li><a href="#perfurm">Perfumaria</a></li>
+            <li><a href="#hygiene">Higiene Pessoal</a></li>
+        </ul>
+        <ul id="slide-out" class="side-nav fixed">
+            <li class="bold"><a href="#medicine" class="waves-effect waves-teal">Medicamentos</a></li>
+            <li class="bold"><a href="#perfurm" class="waves-effect waves-teal">Perfumaria</a></li>
+            <li class="bold"><a href="#hygiene" class="waves-effect waves-teal">Higiene Pessoal</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </nav>
+
+    <div data-role="page" id="medicine" class="center">
+        <h4>Medicamentos</h4>
+
+        <div class="section">
+            <div class="collection">
+                <a class="collection-item waves-effect black-text">Dorflex
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+            </div>
+            <h6 class="container">Gripe</h6>
+            <div class="collection">
+                <a class="collection-item waves-effect black-text">Cimegripe
+                <span class="badge blue darken-4 white-text"></span> 
+            </a>
+                <a class="collection-item waves-effect black-text">Multigripe
+                <span class="badge blue darken-4 white-text"></span> 
+            </a>
+                <a class="collection-item waves-effect black-text">Naldecon
+                <span class="badge blue darken-4 white-text"></span> 
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="perfurm" class="center">
+        <h4>Perfurmaria</h4>
+
+        <div class="section">
+            <div class="collection">
+                <a class="collection-item waves-effect black-text">Perfume Axe
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+                <a class="collection-item waves-effect black-text">Perfume Axe Ultra
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+            </div>
+            <h6 class="container">Perfumaria - Feminino</h6>
+            <div class="collection">
+                <a class="collection-item waves-effect black-text">Perfume Axe F Women
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+                <a class="collection-item waves-effect black-text">Perfume Axe Ultra F Women
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="hygiene" class="center">
+        <h4>Higiene Pessoal</h4>
+
+        <div class="section">
+            <div class="collection">
+                <a class="collection-item waves-effect black-text">Desodorante Axe F Women
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+                <a class="collection-item waves-effect black-text">Desodorante Axe Ultra F Men
+                <span class="badge blue darken-4 white-text"></span>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large
+ waves-effect waves-light blue modal-trigger">
+            <i class="material-icons">done</i>
+        </a>
+    </div>
+
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo dos itens selecionados</h5>
+            <input type="number" class="validate" placeholder="Número do vendedor" id="numero-vendedor">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-footer">
+                <button class="btn deep-orange waves-effect waves-light modal-close">
+                Concluir
+                </button>
+                <button class="acao-limpar btn-flat waves-effect waves-red modal-close">
+                Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
